@@ -2,9 +2,11 @@
 
 namespace App\GraphQL\Queries;
 
-use App\Wine;
-use GraphQL\Type\Definition\Type;
+use GraphQL;
 use Rebing\GraphQL\Support\Query;
+use Rebing\GraphQL\Support\SelectFields;
+use GraphQL\Type\Definition\Type;
+use App\Wine;
 
 class WinesQuery extends Query
 {

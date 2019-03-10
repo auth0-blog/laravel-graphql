@@ -100,13 +100,9 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                // 'example_query' => ExampleQuery::class,
-            ],
-            'mutation' => [
-                // 'example_mutation'  => ExampleMutation::class,
-            ],
-            'middleware' => [],
-            'method' => ['get', 'post'],
+                'wine' => App\GraphQL\Queries\WineQuery::class,
+                'wines' => App\GraphQL\Queries\WinesQuery::class,
+            ]
         ],
     ],
 
@@ -120,8 +116,7 @@ return [
     // ]
     //
     'types' => [
-        // 'example'           => ExampleType::class,
-        // 'relation_example'  => ExampleRelationType::class,
+        'Wine' => App\GraphQL\Types\WineType::class,
     ],
 
     // This callable will be passed the Error object for each errors GraphQL catch.
